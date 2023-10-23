@@ -11,6 +11,6 @@ lint:
 deploy:
 	echo "Deploying app"
 	eb init -p python-3.11 flask-cd --region ap-northeast-2
-	eb create flask-cd-env
+	eb deploy flask-cd-env
 
 all: install lint test
